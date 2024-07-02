@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main_box{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 40px auto;
+}
+#btn{
+    height: 40px;
+    width: 80px;
+    font-size: larger;
+    display: block;
+    margin: 1rem auto;
+    border-radius: .4rem;
+    background-color: rgb(220, 211, 211);
+}
+#btn:active{
+    background-color: rgb(83, 155, 83
+}
+
+.slider{
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+
+}
