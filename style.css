@@ -3,6 +3,7 @@
     padding: 0;
 }
 #main_box{
+    background-image: url(assets/yellow_back.avif);
     width: 500px;
     height: 500px;
     border: 2px solid black;
@@ -18,13 +19,29 @@
     background-color: rgb(220, 211, 211);
 }
 #btn:active{
-    background-color: rgb(83, 155, 83
+    background-color: rgb(83, 155, 83);
 }
 
 .slider{
+    visibility: hidden;
     width: 100px;
     height: 20px;
-    background-color: red;
+    /* background-color: blue; */
+    background: url(assets/O5GLLQ0.jpg) ;
     position: relative;
+}
 
+#slider1{
+    visibility: visible;
+}
+
+
+.animate{
+    animation: slide 4s infinite linear;
+}
+
+@keyframes slide {
+    0%{left: 0px;}
+    50%{left: 400px;}
+    100%{left:0px}
 }
