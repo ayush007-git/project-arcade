@@ -2,8 +2,32 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: rgb(34, 25, 25);
+}
+
+.whole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Highscores{
+    border: 2px solid white;
+    width: 400px;
+    height: 400px;
+    color: white;
+    margin: 150px;
+}
+
+#heading{
+    text-align: center;
+    padding: 20px;
+}
+
 #main_box{
-    background-image: url(assets/yellow_back.avif);
+    background-image: url(/assets/yellow_back.avif);
     width: 500px;
     height: 500px;
     border: 2px solid black;
@@ -27,7 +51,7 @@
     width: 100px;
     height: 20px;
     /* background-color: blue; */
-    background: url(assets/O5GLLQ0.jpg) ;
+    background: url(/assets/O5GLLQ0.jpg) ;
     position: relative;
 }
 
