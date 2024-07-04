@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  h1 {
+    margin-top: 50px;
+  }
+  
+  #game {
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #computer-choice,
+  #user-choice,
+  #result,
+  #score {
+    margin-bottom: 20px;
+  }
+
+  #computer-choice,
+  #user-choice{
+    padding: 50px;
+  }
+  
+  .choice {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .choice:hover {
+    background-color: #555;
+  }
+  
+  #choices {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #winner {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #computer-score,
+  #user-score {
+    font-weight: bold;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+  
+  .dark-mode #game {
+    background-color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark-mode .choice {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .dark-mode .choice:hover {
+    background-color: #ddd;
+  }
+  
+  .dark-mode h1,
+  .dark-mode #winner,
+  .dark-mode #computer-score,
+  .dark-mode #user-score {
+    color: #f2f2f2;
+  }
+  .choices{
+    display: flex;
+    justify-content: center;
+  }

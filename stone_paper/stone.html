@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div id="game">
+    <div class="choices">
+      <div id="computer-choice">
+        <h2>Computer's Choice:</h2>
+        <img id="computer-image" src="" />
+      </div>
+      <div id="user-choice">
+        <h2>Your Choice:</h2>
+        <img id="user-image" src="" />
+      </div>
+    </div>
+    <div id="result">
+      <h2>Result:</h2>
+      <p id="winner"></p>
+    </div>
+    <div id="score">
+      <h2>Score:</h2>
+      <p id="user-score">User: 0</p>
+      <p id="computer-score">Computer: 0</p>
+    </div>
+    <div id="choices">
+      <button class="choice" onclick="play('rock')">Rock</button>
+      <button class="choice" onclick="play('paper')">Paper</button>
+      <button class="choice" onclick="play('scissors')">Scissors</button>
+    </div>
+  </div>
+
+  <script src="stp.js"></script>
+</body>
+
+</html>
