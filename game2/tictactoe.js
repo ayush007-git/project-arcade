@@ -15,10 +15,13 @@ async function makeMove(row, col) {
 
     board[row][col] = currentPlayer;
 
+    
+
     document.getElementById("board").children[row * 3 + col].innerText = currentPlayer;
 
     if (checkWin(currentPlayer)) {
         gameOver = true;
+        alert(`Player "${currentPlayer}" won the game!`);
         document.getElementById("player_win_status").innerText = `Player "${currentPlayer}" won the game!`;
     } else if (checkTie()) {
         gameOver = true;
