@@ -11,36 +11,54 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;
-    /* background-image: url(/assets/tic_tac_toe_wallpaper.jpg); */
+    background-image: url(/assets/tic_tac_toe_wallpaper.jpg);
 }
 
 h1 {
     margin-bottom: 20px;
+    font-size: 90px;
+    background-color: #ffffff;
 }
 
 #player_win_status{
     font-family:'Courier New', Courier, monospace;
     font-size: 30px;
+    font-weight:bolder;
+    color: white;
     padding: 20px;
 }
 
+.animate{
+    animation: grow 2s ;
+    background-color: black;
+}
+
+@keyframes grow {
+    0%{scale: .1;}
+    /* 100%{scale: 1;} */
+}
+
 #board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    display: flex;
+    grid-gap: 13px;
     width: 300px;
     height: 300px;
-    border: 2px solid rgb(11, 9, 9);
+    /* border: 2px solid rgb(11, 9, 9); */
+    flex-wrap: wrap;
+    background-color:rgba(255, 255, 255, 0);
+    box-sizing: border-box;
 }
 
 .tile {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #e8e0e0;
+    border: 5px solid #ff2a2a;
     font-size: 48px;
     cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
 }
 
 button {

@@ -21,8 +21,8 @@ async function makeMove(row, col) {
 
     if (checkWin(currentPlayer)) {
         gameOver = true;
-        alert(`Player "${currentPlayer}" won the game!`);
         document.getElementById("player_win_status").innerText = `Player "${currentPlayer}" won the game!`;
+        document.getElementById("player_win_status").classList.add("animate");
     } else if (checkTie()) {
         gameOver = true;
         document.getElementById("player_win_status").innerText = "It's a tie!";
@@ -97,4 +97,5 @@ function resetGame() {
         tiles[i].innerText = "";
     }
     document.getElementById("player_win_status").innerText=" ";
+    document.getElementById("player_win_status").classList.remove("animate");
 }

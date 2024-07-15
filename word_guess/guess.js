@@ -10,7 +10,7 @@ const inputs = document.querySelector(".inputs"),
 let word, maxGuesses, incorrectLetters = [], correctLetters = [];
 
 function getRandomWord() {
-    fetch('https://random-word-api.herokuapp.com/word', {
+    fetch('https://random-word-api.vercel.app/api?words=1', {
       method: 'GET'
     })
       .then(response => response.json())
