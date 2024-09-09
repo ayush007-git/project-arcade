@@ -30,6 +30,14 @@ const usrSchema = new mongoose.Schema({
 
 const User = mongoose.model('user', usrSchema);
 
+app.get('/',async(req,res)=>{
+    try{
+        res.redirect('/login.html');
+    }catch(error){
+        window.write("Cannot reach login.html");
+    }
+})
+
 
 // POST route to handle user signup
 app.post('/signup', async (req, res) => {
